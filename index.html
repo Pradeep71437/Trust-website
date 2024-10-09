@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Apply Poppins font globally */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Styling for active link */
+        .active {
+            color: #ff5733;
+        }
+
+        /* section {
+            padding: 50px;
+        } */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+     <div class="navbar ">
+    <nav class="bg-white fixed w-full top-0 shadow-md z-50 p-4 lg:px-[120px]">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl  font-semibold">YourLogo</a>
+            <button class="block lg:hidden text-gray-700 focus:outline-none" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div class="hidden lg:flex space-x-[70px]" id="menu">
+                <a href="#home"  class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Home</a>
+                <a href="#about" class="block text-gray-700 py-2 border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">About</a>
+                <a href="#services"  class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Services</a>
+                <a href="#contact"  class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Contact</a>
+        
+
+                <a href="#donate" class="block text-white bg-orange-400 px-8 py-2 rounded-full transition duration-300  hover:bg-orange-500">Donate</a>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden fixed bg-white w-full pt-[90px] z-10" id="mobile-menu">
+            <div class="text-center">
+
+                <a href="#home" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Home</a>
+                <a href="#about" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">About</a>
+                <a href="#services" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Services</a>
+                <a href="#contact" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Contact</a>
+                <a href="#donate" class="block text-gray-700 py-2 pl-4 bg-orange-400 text-white py-3 hover:bg-orange-500">Donate</a>
+            </div>
+
+            
+        </div>
+    </nav>
+</div>
+    <!-- Sections for navigation -->
+     <div>
+    <section id="home" class="bg-white text-white">
+        <!-- <h1 class="text-4xl mt-10">Home Section</h1> -->
+         <div>
+
+         
+        <div class="container mt-20 mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between h-fit p-8 rounded-lg">
+        
+            <!-- Text Div -->
+            <div class="text-left  w-full lg:w-3/5 mb-8 lg:mb-0 ">
+                <div class=" lg:my-5" >
+                    <div>
+                        <h2 class="text-center lg:text-start text-4xl lg:text-[55px] lg:w-[630px] font-semibold text-black  leading-tight">
+                            Lets Ensure A Better Future For The Ones In Need
+                        </h2>
+                                        <p class=" text-center text-[15px] lg:text-lg pt-7 lg:text-start lg:pt-[40px] lg:pr-[100px] text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
+                    Cras venenatis euismod malesuada. Nullam ut magna ac velit ornare viverra a at nisi.
+                </p>
+                <div class="lg:pt-[95px] flex justify-center items-center lg:justify-start">
+                    <a href="#" class="lg:text-[20px] mt-[30px] lg:mt-0 text-center lg:text-start font-medium bg-orange-400 px-6 py-4 rounded-full">Donate Now</a>
+                </div>
+            </div>
+            </div>
+            </div>
+    
+            <!-- Image Div -->
+            <div class="lg:w-2/5">
+                <img src="https://via.placeholder.com/500x500" alt="Sample Image" class="w-full h-auto rounded-lg ">
+            </div>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:pt-[120px] gap-8">
+        
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Card Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Card Title 1</h3>
+                    <p class="text-gray-600">This is a description for the first card. It is responsive and adjusts based on screen size.</p>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Card Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Card Title 2</h3>
+                    <p class="text-gray-600">This is a description for the second card. It is responsive and adjusts based on screen size.</p>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Card Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Card Title 3</h3>
+                    <p class="text-gray-600">This is a description for the third card. It is responsive and adjusts based on screen size.</p>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Card Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2">Card Title 4</h3>
+                    <p class="text-gray-600">This is a description for the fourth card. It is responsive and adjusts based on screen size.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="bg-white ">
+        <!-- <h1 class="text-4xl">About Section</h1> -->
+
+
+
+
+
+
+
+        <div class="lg:mx-10 lg:mt-20 lg:flex ">
+            <div class="lg:w-1/2 flex justify-center items-center">
+                <div class="w-[400px] h-[270px] lg:w-[600px] lg:h-[500px] bg-gray-100 rounded-xl flex justify-center items-center relative">
+             
+                
+                    <a href="https://player.vimeo.com/external/488076225.hd.mp4?s=9cf4808c4e76c0a9267abb75dbec48bc451a138f&amp;profile_id=175" class="glightbox_video"> 
+                        <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="inner-circle" d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z" fill="white"></path>
+                            <circle class="outer_circle" cx="65.5" cy="65.5" r="64" stroke="white"></circle>
+                            <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="#BF2428"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="lg:w-1/2 lg:px-10">
+                <h1 class="font-semibold border-b-[5px] border-orange-400  text-4xl w-fit mt-7 lg:mt-0 lg:text-[50px]">About Us</h1>
+                <p class="py-6 lg:py-10 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor recusandae fugiat quia esse omnis repudiandae ipsam ab nihil! Qui voluptates repudiandae aut velit nemo. Consequuntur quo cum unde voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi minus eius quasi nobis commodi necessitatibus quas maiores quod. Dolorum repellat blanditiis ex veritatis unde pariatur quaerat quia, porro similique blanditiis ex veritatis unde pariatur quaerat quia, porro similique?</p>
+                <div class="lg:mt-4">
+
+                    <a href="#contact" class="bg-orange-400 px-5 lg:text-xl py-3 text-white">Know More</a>
+                </div>
+            </div>
+
+        </div>
+    
+
+    </section>
+
+    <section id="services" class="">
+        <!-- <h1 class="text-4xl">Services Section</h1> -->
+        <div class="carousel relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg">
+            <!-- Carousel Items -->
+            <div id="carousel-items" class="flex transition-transform duration-700 ease-in-out">
+                <!-- Slide 1 -->
+                <div class="min-w-full">
+                    <img src="https://via.placeholder.com/800x400?text=Slide+1" class="w-full h-auto" alt="Slide 1">
+                    <p class="text-center py-7 text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio. Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore amet obcaecati!</p>
+                </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full">
+                    <img src="https://via.placeholder.com/800x400?text=Slide+2" class="w-full h-auto" alt="Slide 2">
+                    <p class="text-center py-7 text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio. Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore amet obcaecati!</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="min-w-full">
+                    <img src="https://via.placeholder.com/800x400?text=Slide+3" class="w-full h-auto" alt="Slide 3">
+                    <p class="text-center py-7 text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio. Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore amet obcaecati!</p>
+
+                </div>
+            </div>
+        
+            <!-- Next and Prev Buttons -->
+            <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full hover:bg-gray-800">
+                &#10094;
+            </button>
+            <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full hover:bg-gray-800">
+                &#10095;
+            </button>
+        
+            <!-- Navigation Dots -->
+            <div class="flex justify-center space-x-2 mt-4">
+                <button class="dot w-4 h-4 bg-gray-400 rounded-full focus:outline-none" data-slide="0"></button>
+                <button class="dot w-4 h-4 bg-gray-400 rounded-full focus:outline-none" data-slide="1"></button>
+                <button class="dot w-4 h-4 bg-gray-400 rounded-full focus:outline-none" data-slide="2"></button>
+            </div>
+        </div>
+        
+        <!-- Tailwind Script -->
+      
+         
+    </section>
+
+    <section id="contact" class="p-0">
+        <!-- <h1 class="text-4xl">Contact Section</h1> -->
+         <div class=" bg-gray-400 flex">
+            <div class="w-full lg:w-3/5 h-auto bg-orange-400 flex  justify-center items-center p-8 pt-[50px]">
+
+                <form action="#" class="w-full  lg:px-10">
+                    <input type="text"  placeholder="Your Name" class="w-full h-[60px] mb-5 p-3 bg-transparent border-2 border-white text-white placeholder:text-white rounded-lg"><br>
+                    <input type="email" placeholder="Your Email" class="w-full h-[60px] mb-5 p-3  bg-transparent border-2 border-white text-white placeholder:text-white rounded-lg"><br>
+                    <textarea name="" id=""class="w-full h-[300px]  bg-transparent border-2 border-white text-white placeholder:text-white rounded-lg"></textarea>
+                    <div class="flex justify-center items-center">
+
+                        <button class="bg-white w-full  px-4 py-5  rounded-full  my-5 text-black text-center hover:bg-black hover:text-white">SEND MESSAGE</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="w-full lg:w-2/5 ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15546.963180789087!2d80.20110209906116!3d13.052164146328426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266bf5a08c45f%3A0x9478e1cd7e7f1723!2sVadapalani%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1728456613407!5m2!1sen!2sin" width="600" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+
+    </section>
+</div>
+    <!-- Script for navbar behavior -->
+    <script>
+        // Mobile menu toggle
+      
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
