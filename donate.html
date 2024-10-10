@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Apply Poppins font globally */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Styling for active link */
+        .active {
+            color: #ff5733;
+        }
+
+        /* section {
+            padding: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="navbar ">
+        <nav class="bg-white fixed w-full top-0 shadow-md z-50 p-3 lg:px-[120px]">
+            <div class="container mx-auto px-4  flex justify-between items-center">
+                <a href="#" class="text-xl  font-semibold">
+                <img src="/images/logo.png" class="w-[200px]" alt="">    
+                </a>
+                <button class="block lg:hidden text-gray-700 focus:outline-none" id="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <div class="hidden lg:flex space-x-[70px]" id="menu">
+                    <a href="index.html"
+                        class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Home</a>
+                    <a href="index.html#about"
+                        class="block text-gray-700 py-2 border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">About</a>
+                    <a href="index.html#services"
+                        class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Services</a>
+                    <a href="index.html#contact"
+                        class="block text-gray-700 py-2  border-b-[3px] border-transparent hover:border-orange-400 transition duration-300">Contact</a>
+
+
+                    <a href="#"
+                        class="block text-white bg-orange-400 px-8 py-2 rounded-full transition duration-300  hover:bg-orange-500">Donate</a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="lg:flex mt-[80px]">
+        <div class="lg:w-2/5 h-auto" style="background-image: url('/images/contact-bg.png');">
+            <div class="bg-blue-950/90 h-screen">
+                <!-- Your content here -->
+            </div>
+            
+
+        </div>
+        <div class="lg:w-3/5 pb-5">
+       <h1 class="font-bold text-2xl lg:text-4xl text-center pt-[60px]">Together We Can Make a Change !</h1>
+       <div class="flex items-center justify-center">
+        <img src="/images/qrcode.png" class="w-[300px] lg:w-[400px]" alt="">
+       </div>
+       <div>
+        <h1 class="text-center text-xl lg:text-3xl font-bold">Scan with any app</h1>
+        <div class="flex justify-center items-center my-10">
+            <img src="/images/logo1.png" class="w-[90px] lg:w-[120px] mx-5 h-auto" alt="">
+            <img src="/images/logo2.png" class="w-[90px] lg:w-[120px] mx-5 h-auto" alt="">
+            <img src="/images/logo3.png" class="w-[90px] lg:w-[160px] mx-5 h-auto" alt="">
+
+        </div>
+        <div class="flex justify-center items-center my-10">
+            <img src="/images/logo4.png" class="w-[120px] mx-5 h-auto" alt="">
+            <img src="/images/logo5.png" class="w-[120px] mx-5 h-auto" alt="">
+
+        </div>
+       </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="w-full h-auto bg-[#272c49]">
+        <div class="lg:flex lg:justify-between lg:items-start p-4">
+            <div class="lg:w-1/4 h-full flex justify-center items-center">
+                 <img src="images/logo-w.png" class="h-full mt-14" alt="">
+            </div>
+            
+            <div class="lg:w-1/4 pl-0 lg:pl-20">
+                <div class="flex justify-start items-start">
+                    <h2 class="text-2xl text-white pt-10 border-b-2 border-orange-400">Quick Links</h2>
+                </div>
+                <div class="flex justify-start items-center py-4">
+                    <ul class="text-white">
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="index.html#about">> About</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="index.html#our-works">> Our Works</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="index.html#members">> Members</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="index.html#contact">> Contact</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="#">> Donate</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+    
+            <div class="lg:w-1/4 h-full mt-4 lg:mt-0">
+                <div class="flex justify-start items-start">
+                    <h2 class="text-2xl text-white pt-10 border-b-2 border-orange-400">Location</h2>
+                </div>
+                <div class="flex justify-start items-center py-4">
+                    <p class="text-white text-start">No.30, Ramakrishnapuram 3rd street, west mambalam, chennai - 600033.</p>
+                </div>
+                <div class="flex justify-start items-center">
+                    <a class="text-orange-400 cursor-pointer" href="https://www.google.com/maps/place/13%C2%B002'14.6%22N+80%C2%B013'19.1%22E/@13.0373879,80.2193925,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.0373879!4d80.2219674?entry=ttu&g_ep=EgoyMDI0MTAwNy4xIKXMDSoASAFQAw%3D%3D">View On Map</a>
+                </div>
+            </div>
+    
+            <div class="lg:w-1/4 pl-0 lg:pl-20 mt-4 lg:mt-0">
+                <div class="flex justify-start items-start">
+                    <h2 class="text-2xl text-white pt-10 border-b-2 border-orange-400">Contact</h2>
+                </div>
+                <div class="flex justify-start items-center py-4">
+                    <ul class="text-white">
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">mayakoothan84@gmail.com</li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="tel:+916383024837" class="text-white hover:text-orange-400 ">+91 6383024837</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="tel:+919940700250" class="text-white hover:text-orange-400 ">+91 9940700250</a>
+                        </li>
+                        <li class="pb-2 hover:text-orange-400 cursor-pointer">
+                            <a href="tel:+918015360121" class="text-white hover:text-orange-400 ">+91 8015360121</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
