@@ -28,6 +28,8 @@
             padding: 50px;
         } */
     </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 </head>
 
 <body class="">
@@ -37,7 +39,7 @@
         <nav class="bg-white fixed w-full top-0 shadow-md z-50 p-3 lg:px-[120px]">
             <div class="container mx-auto px-4  flex justify-between items-center">
                 <a href="#" class="text-xl  font-semibold">
-                <img src="./images/logo.png" class="w-[120px] lg:w-[160px]" alt="">    
+                <img src="./images/logo.webp" class="w-[120px] lg:w-[160px]" alt="">    
                 </a>
                 <button class="block lg:hidden text-gray-700 focus:outline-none" id="menu-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -71,12 +73,12 @@
     <div class="lg:hidden hidden fixed bg-white w-full pt-[90px] z-10" id="mobile-menu">
         <div class="text-center">
 
-            <a href="#home" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Home</a>
-            <a href="#about" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">About</a>
-            <a href="#contributions" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Contributions</a>
-            <a href="#members" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Members</a>
+            <a href="index.html" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Home</a>
+            <a href="index.html#about" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">About</a>
+            <a href="index.html#contributions" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Contributions</a>
+            <a href="index.html#members" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Members</a>
 
-            <a href="#contact" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Contact</a>
+            <a href="index.html#contact" class="block text-gray-700 py-2 pl-4 hover:bg-gray-100">Contact</a>
             <a href="donate.html"
                 class="block text-gray-700 py-2 pl-4 bg-orange-400 text-white py-3 hover:bg-orange-500">Donate</a>
         </div>
@@ -97,7 +99,7 @@
 
                     <!-- Text Div -->
                     <div class="text-left  w-full lg:w-3/5 mb-8 lg:mb-0 ">
-                        <div class="">
+                        <div class=""  data-aos="fade-right" data-aos-duration="2000">
                             <div>
                                 <h2
                                     class="text-center lg:text-start text-4xl  lg:text-[70px] lg:w-[630px] font-semibold text-black  leading-tight">
@@ -119,7 +121,7 @@
                     </div>
 
                     <!-- Image Div -->
-                    <div class="w-full lg:w-2/5">
+                    <div class="w-full lg:w-2/5" data-aos="fade-left" data-aos-duration="2000">
                         <img src="./images/hero.webp" alt="Sample Image"
                             class="w-full shadow-lg h-auto rounded-lg ">
                     </div>
@@ -160,7 +162,7 @@
         </section>
 
         <section id="about" class="bg-white mb-10">
-        <div class="lg:mx-10 lg:mt-20 lg:flex ">
+        <div class="lg:mx-10 lg:mt-20 lg:flex "  data-aos="fade-up" data-aos-duration="2000">
                 <div class="lg:w-1/2 flex justify-center items-center">
                     <div
                         class="w-[400px] h-[270px] lg:w-[600px] lg:h-[500px] bg-gray-100 rounded-xl flex justify-center items-center relative">
@@ -178,7 +180,7 @@
                                     d="M60 76V57L77 66.7774L60 76Z" fill="#BF2428"></path>
                             </svg>
                         </a> -->
-                        <img src="./images/contact-bg.png" alt="">
+                        <img src="./images/contact-bg.webp" alt="">
                     </div>
 
                 </div>
@@ -204,31 +206,31 @@
 
         </section>
 
-        <section id="contributions" class="bg-white mb-10 p-4">
+        <section id="contributions" class="bg-white mb-10 p-4" >
             <!-- <h2 class="text-3xl text-center font-semibold mb-8">Our Contributions</h2> -->
-             <div class="flex justify-center items-center my-20">
+             <div class="flex justify-center items-center my-20" data-aos="fade-up" data-aos-duration="2000">
 
                  <h1 class="font-semibold border-b-[5px] border-orange-400 text-4xl w-fit mt-7 lg:mt-0 lg:text-[50px] ">Our Contributions</h1>
              </div>
             <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Contribution Box 1: Education -->
-                <div class=" rounded-lg shadow-md flex flex-col items-center p-4">
+                <div class=" rounded-lg shadow-md flex flex-col items-center p-4" data-aos="fade-right" data-aos-duration="2000">
                     <h3 class="text-3xl font-semibold mb-4" style="color: #272c49;">Education</h3>
-                    <img src="./images/edu.jpg" alt="Education" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
+                    <img src="./images/edu.webp" alt="Education" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
                     <p class="text-center">We provide educational resources and support to children in need.</p>
                 </div>
                 
                 <!-- Contribution Box 2: Food Donation -->
-                <div class="rounded-lg shadow-md flex flex-col items-center p-4">
+                <div class="rounded-lg shadow-md flex flex-col items-center p-4" data-aos="fade-up" data-aos-duration="2000">
                     <h3 class="text-3xl font-semibold mb-4 text-orange-400"style="color: #272c49;">Food Donation</h3>
-                    <img src="./images/food.png" alt="Food Donation" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
+                    <img src="./images/food.webp" alt="Food Donation" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
                     <p class="text-center">Our team ensures that no one goes hungry by distributing food to those in need.</p>
                 </div>
         
                 <!-- Contribution Box 3: Helping Elderly -->
-                <div class=" rounded-lg shadow-md flex flex-col items-center p-4">
+                <div class=" rounded-lg shadow-md flex flex-col items-center p-4" data-aos="fade-left" data-aos-duration="2000">
                     <h3 class="text-3xl font-semibold mb-4 text-orange-400"style="color: #272c49;">Helping Elderly</h3>
-                    <img src="./images/elderly.png" alt="Helping Elderly" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
+                    <img src="./images/elderly.webp" alt="Helping Elderly" class="w-full h-auto lg:h-[400px] object-cover rounded-md mb-4">
                     <p class="text-center">We assist the elderly with care and companionship, enhancing their quality of life.</p>
                 </div>
             </div>
@@ -239,7 +241,7 @@
 
 
 
-        <section id="services" class="mt-20" style="background-color: #272c49;">
+        <section id="services" class="mt-20" style="background-color: #272c49;" data-aos="fade-up" data-aos-duration="2000">
             <!-- <h1 class="text-4xl">Services Section</h1> -->
             <div class="flex justify-center items-center my-20">
 
@@ -250,7 +252,7 @@
                 <div id="carousel-items" class="flex transition-transform  duration-700 ease-in-out">
                     <!-- Slide 1 -->
                     <div class="min-w-full">
-                        <img src="./images/s1.jpg" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
+                        <img src="./images/s1.webp" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
                         <p class="text-center text-white py-7 text-lg">Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio.
                             Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore
@@ -258,7 +260,7 @@
                     </div>
                     <!-- Slide 2 -->
                     <div class="min-w-full">
-                        <img src="./images/s2.png" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
+                        <img src="./images/s2.webp" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
                         <p class="text-center text-white py-7 text-lg">Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio.
                             Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore
@@ -266,7 +268,7 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="min-w-full">
-                        <img src="./images/s3.png" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
+                        <img src="./images/s3.webp" class="w-[500px] lg:w-full h-[200px] lg:h-[600px]" alt="Slide 1">
                         <p class="text-center text-white py-7 text-lg">Lorem ipsum dolor sit, amet consectetur
                             adipisicing elit. Incidunt culpa sed tempore vitae earum esse doloremque asperiores odio.
                             Quia, voluptatibus aspernatur? Assumenda vitae aut voluptatem consectetur. Eveniet labore
@@ -299,11 +301,11 @@
 
         <section id="members">
             <div>
-                <div class="flex justify-center items-center my-20">
+                <div class="flex justify-center items-center my-20" data-aos="fade-up" data-aos-duration="2000">
 
                     <h1 class="font-semibold border-b-[5px] border-orange-400  text-4xl w-fit mt-7 lg:mt-0 lg:text-[50px] ">Founders</h1>
                 </div>
-                <div class="lg:flex mb-[70px] lg:mb-[140px]">
+                <div class="lg:flex mb-[70px] lg:mb-[140px]" data-aos="fade-up" data-aos-duration="2000">
                     <div class="lg:w-2/5">
                         <img src="https://via.placeholder.com/10" alt="Food Donation" class="w-full h-[320px] lg:h-[400px] object-cover rounded-md mb-4">
                     </div>
@@ -312,7 +314,7 @@
                         <p class="pt-[40px] lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ad doloremque, temporibus repellat ut, similique odit inventore iusto sed optio reprehenderit at molestias, voluptates aperiam architecto excepturi. Illum, corporis non! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ad doloremque, temporibus repellat ut, similique odit inventore iusto sed optio reprehenderit at molestias, voluptates aperiam architecto excepturi. Illum, corporis non!</p>
                     </div>
                 </div>
-                <div class="hidden lg:flex mb-[70px] lg:mb-[140px]">
+                <div class="hidden lg:flex mb-[70px] lg:mb-[140px]" data-aos="fade-up" data-aos-duration="2000">
                     <div class="lg:w-3/5 lg:px-14">
                         <h1 class="text-3xl text-center lg:text-start lg:text-6xl font-bold">Member 1</h1>
                         <p class="pt-[40px] lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ad doloremque, temporibus repellat ut, similique odit inventore iusto sed optio reprehenderit at molestias, voluptates aperiam architecto excepturi. Illum, corporis non! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ad doloremque, temporibus repellat ut, similique odit inventore iusto sed optio reprehenderit at molestias, voluptates aperiam architecto excepturi. Illum, corporis non!</p>
@@ -322,7 +324,7 @@
                     </div>
                     
                 </div>
-                <div class="lg:hidden  mb-[70px] lg:mb-[140px]">
+                <div class="lg:hidden  mb-[70px] lg:mb-[140px]" data-aos="fade-up" data-aos-duration="2000">
                     <div class="lg:w-2/5">
                         <img src="https://via.placeholder.com/10" alt="Food Donation" class="w-full  h-[320px] lg:h-[400px]  object-cover rounded-md mb-4">
                     </div>
@@ -356,10 +358,10 @@
 
                 <!-- Contact Form Div -->
                 <div class="w-full lg:w-3/5 h-auto bg-coverbg-center "
-                    style="background-image: url('./images/contact-bg.png');">
+                    style="background-image: url('./images/contact-bg.webp');">
                     <div class="bg-orange-400/80 flex justify-center items-center p-8 pt-[50px] div1">
 
-                        <form action="#" class="w-full lg:px-10">
+                        <form action="#" class="w-full lg:px-10" data-aos="fade-up" data-aos-duration="2000">
                             <h1 class="text-6xl text-white font-bold my-10 pb-4 w-fit">Let's Get In Touch !</h1>
 
                             <input type="text" placeholder="Your Name"
@@ -469,12 +471,20 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <h1 class="text-center text-white text-md py-8  bg-[#272c49]">Copyrights © 2024 <span style="color:orange ;">Thirukulanthai Sri Mayan Charitable Trust</span>. All Rights Reserved.</h1>
+            </div>
         </footer>
         
     </div>
     <!-- Script for navbar behavior -->
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 
 </html>
