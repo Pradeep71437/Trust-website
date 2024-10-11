@@ -28,39 +28,46 @@ window.addEventListener('scroll', () => {
 
 
 
-const items = document.getElementById('carousel-items');
-            const totalItems = items.children.length;
-            let currentIndex = 0;
-            const dots = document.querySelectorAll('.dot');
-        
-            // Update carousel and active dot
-            function updateCarousel() {
-                items.style.transform = `translateX(-${currentIndex * 100}%)`;
-                dots.forEach(dot => dot.classList.remove('bg-gray-900'));
-                dots[currentIndex].classList.add('bg-gray-900');
-            }
-        
-            // Next and Prev Button functionality
-            document.getElementById('next').addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % totalItems;
-                updateCarousel();
-            });
-        
-            document.getElementById('prev').addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-                updateCarousel();
-            });
-        
-            // Dots navigation
-            dots.forEach(dot => {
-                dot.addEventListener('click', (e) => {
-                    currentIndex = parseInt(e.target.dataset.slide);
-                    updateCarousel();
-                });
-            });
-        
-            // Initialize the first dot as active
-            updateCarousel();
+const slides = document.getElementById('carouselSlides');
+const dots = document.querySelectorAll('[data-slide]');
+let currentIndex = 0;
+
+const updateCarousel = (index) => {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('bg-orange-400'));
+    dots[index].classList.add('bg-orange-400');
+};
+
+document.getElementById('prevButton').addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? dots.length - 1 : currentIndex - 1;
+    updateCarousel(currentIndex);
+});
+
+document.getElementById('nextButton').addEventListener('click', () => {
+    currentIndex = (currentIndex === dots.length - 1) ? 0 : currentIndex + 1;
+    updateCarousel(currentIndex);
+});
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel(index);
+    });
+});
+
+// Auto slide functionality (Optional)
+setInterval(() => {
+    currentIndex = (currentIndex === dots.length - 1) ? 0 : currentIndex + 1;
+    updateCarousel(currentIndex);
+}, 5000); // Slide every 5 seconds
+
+
+
+
+
+
+
+
 
             function animateCounter(id, start, end, duration, stepSize = 1) {
                 let obj = document.getElementById(id),
